@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mon application</string>
+    <string name="bienvenue">Bienvenue</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="valider">Valider</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="background">background</string>
+    <string name="nom">Nom</string>
+    <string name="niveau_1">Niveau 1</string>
+    <string name="niveau_1_en_cours">Niveau 1 en cours...</string>
+    <string name="clique_ici">Clique ici !</string>
+    <string name="description">description</string>
+    <string name="table">À table !</string>
+    <string name="tape_1">Étape 1</string>
+    <string name="total_0">Total : 0</string>
+    <string name="reste_50">Reste : 50</string>
+</resources>

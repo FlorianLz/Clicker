@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fond_bleu"
+    tools:context="com.example.florianlaignez.myapplication.SecondActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textHaut"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#6df4f4f4"
+        android:text="@string/table"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="70sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="246dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="12dp"
+        android:text="Ajoute un nombre aléatoire de clics à votre compteur, compris entre 0 et 200."
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="244dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="11dp"
+        android:text="Chacun de vos clics en vaut 2"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="244dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="11dp"
+        android:text="Ajoute 50 clics à votre compteur"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="242dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="11dp"
+        android:text="Autoclic : vous bénéficiez de l'autoclic jusqu'à la fin du niveau en cours"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginStart="121dp"
+        android:onClick="onClickJouer"
+        android:text="jouer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="138dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="20dp"
+        android:text="Règles du jeu"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHaut" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="328dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:text="À table est un jeu simple ! Il suffit de cliquer sur le oeuf pour le faire grandir. Serez-vous assez patient pour atteindre ca taille final ?"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="253dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="6dp"
+        android:text="Les pouvoirs qui vous seront utiles :"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@mipmap/auto" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/multiple" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/plus" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginStart="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/random" />
+
+</android.support.constraint.ConstraintLayout>
